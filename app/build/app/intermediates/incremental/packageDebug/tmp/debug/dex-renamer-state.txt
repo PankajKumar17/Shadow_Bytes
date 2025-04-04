@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #Fri Apr 04 17:48:36 IST 2025
+=======
+#Fri Apr 04 13:44:45 IST 2025
+>>>>>>> 1c01f859e1c393a911b5924cf37c2a5bb3ca5ecd
 base.0=C\:\\Users\\navee\\Desktop\\SkipQ\\app\\build\\app\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\navee\\Desktop\\SkipQ\\app\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\navee\\Desktop\\SkipQ\\app\\build\\app\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
