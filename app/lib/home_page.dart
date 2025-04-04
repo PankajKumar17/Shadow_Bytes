@@ -5,7 +5,8 @@ import 'bill_page.dart';
 import 'QRScannerPage.dart';
 import 'scratch_win.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'razorpay_button.dart'; // Import RazorpayButton
+import 'razorpay_button.dart'; 
+import 'history_page.dart';
 
 class WalletHomePage extends StatefulWidget {
   const WalletHomePage({super.key});
@@ -120,7 +121,6 @@ class _WalletHomePageState extends State<WalletHomePage> {
 
     double newWalletBalance = _walletBalance + _gameMoney;
 
-    // Update wallet balance in secure storage
     await _secureStorage.write(
       key: "wallet_balance",
       value: newWalletBalance.toString(),
@@ -183,6 +183,12 @@ class _WalletHomePageState extends State<WalletHomePage> {
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => const ProfilePage()),
+      );
+    }
+    if (index == 2) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => HistoryPage()),
       );
     }
     if (index == 1) {

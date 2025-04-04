@@ -29,7 +29,7 @@ class _RazorpayButtonState extends State<RazorpayButton> {
 
   void _handlePaymentSuccess(PaymentSuccessResponse response) {
     Fluttertoast.showToast(msg: "Payment Successful");
-    widget.onPaymentSuccess(widget.amount / 100); // Convert paise back to ₹
+    widget.onPaymentSuccess(widget.amount.toDouble());
   }
 
   void _handlePaymentError(PaymentFailureResponse response) {
