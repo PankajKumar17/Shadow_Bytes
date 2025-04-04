@@ -37,6 +37,9 @@ dependencies:
   cupertino_icons: ^1.0.8
   lucide_icons: ^0.257.0
   shared_preferences: ^2.5.3
+  qr_code_scanner_plus: ^2.0.10+1
+  flutter_secure_storage: ^9.2.4
+  audioplayers: ^5.2.1
 
 dev_dependencies:
   flutter_test:

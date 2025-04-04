@@ -1,332 +1,10 @@
-// import 'package:flutter/material.dart';
-// import 'profile.dart';
-
-// class WalletHomePage extends StatefulWidget {
-//   const WalletHomePage({super.key});
-
-//   @override
-//   State<WalletHomePage> createState() => _WalletHomePageState();
-// }
-
-// class _WalletHomePageState extends State<WalletHomePage> {
-//   final String userName = "Dani Martinez";
-//   int _selectedIndex = 0;
-
-//   void _onItemTapped(int index) {
-//     if (_selectedIndex == index) return;
-
-//     setState(() {
-//       _selectedIndex = index;
-//     });
-
-//     if (index == 3) {
-//       Navigator.push(
-//         context,
-//         MaterialPageRoute(builder: (context) => const ProfilePage()),
-//       );
-//     }
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       backgroundColor: Colors.white,
-//       bottomNavigationBar: BottomNavigationBar(
-//         type: BottomNavigationBarType.fixed,
-//         currentIndex: _selectedIndex,
-//         onTap: _onItemTapped,
-//         selectedItemColor: Colors.black,
-//         unselectedItemColor: Colors.black54,
-//         items: const [
-//           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-//           BottomNavigationBarItem(icon: Icon(Icons.receipt), label: 'Bills'),
-//           BottomNavigationBarItem(icon: Icon(Icons.history), label: 'History'),
-//           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
-//         ],
-//       ),
-//       body: SafeArea(
-//         child: Padding(
-//           padding: const EdgeInsets.all(16.0),
-//           child: Column(
-//             crossAxisAlignment: CrossAxisAlignment.start,
-//             children: [
-//               Row(
-//                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//                 children: [
-//                   Column(
-//                     crossAxisAlignment: CrossAxisAlignment.start,
-//                     children: [
-//                       Text("Hello $userName", style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-//                       const Text("Welcome Back", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-//                     ],
-//                   ),
-//                   CircleAvatar(
-//                     backgroundColor: Colors.blue,
-//                     radius: 20,
-//                     child: Text(
-//                       userName[0],
-//                       style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
-//                     ),
-//                   ),
-//                 ],
-//               ),
-//               const SizedBox(height: 20),
-//               Container(
-//                 decoration: BoxDecoration(
-//                   borderRadius: BorderRadius.circular(16),
-//                   gradient: const LinearGradient(
-//                     colors: [Colors.blueAccent, Colors.cyan],
-//                     begin: Alignment.topCenter,
-//                     end: Alignment.bottomCenter,
-//                   ),
-//                 ),
-//                 padding: const EdgeInsets.all(16),
-//                 child: Column(
-//                   crossAxisAlignment: CrossAxisAlignment.start,
-//                   children: [
-//                     Row(
-//                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//                       children: [
-//                         Row(
-//                           children: const [
-//                             Icon(Icons.account_balance_wallet, color: Colors.white),
-//                             SizedBox(width: 8),
-//                             Text("₹35,000", style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white)),
-//                           ],
-//                         ),
-//                         ElevatedButton(
-//                           onPressed: () {},
-//                           child: const Text("+ Add Money"),
-//                         ),
-//                       ],
-//                     ),
-//                     const SizedBox(height: 20),
-//                     Center(
-//                       child: Column(
-//                         children: const [
-//                           Icon(Icons.qr_code_scanner, size: 100, color: Colors.white),
-//                           SizedBox(height: 10),
-//                           Text("Tap to scan", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white)),
-//                         ],
-//                       ),
-//                     ),
-//                   ],
-//                 ),
-//               ),
-//             ],
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
-
-
-
-
-
-
-
-// import 'package:flutter/material.dart';
-// import 'profile.dart';
-
-// class WalletHomePage extends StatefulWidget {
-//   const WalletHomePage({super.key});
-
-//   @override
-//   State<WalletHomePage> createState() => _WalletHomePageState();
-// }
-
-// class _WalletHomePageState extends State<WalletHomePage> {
-//   int _selectedIndex = 0;
-
-//   void _onItemTapped(int index) {
-//     if (_selectedIndex == index) return;
-
-//     setState(() {
-//       _selectedIndex = index;
-//     });
-
-//     if (index == 3) {
-//       Navigator.push(
-//         context,
-//         MaterialPageRoute(builder: (context) => const ProfilePage()),
-//       );
-//     }
-//   }
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       backgroundColor: Colors.white,
-//       bottomNavigationBar: BottomNavigationBar(
-//         type: BottomNavigationBarType.fixed,
-//         currentIndex: _selectedIndex,
-//         onTap: _onItemTapped,
-//         selectedItemColor: Colors.black,
-//         unselectedItemColor: Colors.black54,
-//         items: const [
-//           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-//           BottomNavigationBarItem(icon: Icon(Icons.receipt), label: 'Bills'),
-//           BottomNavigationBarItem(icon: Icon(Icons.history), label: 'History'),
-//           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
-//         ],
-//       ),
-//       body: SafeArea(
-//         child: Center(
-//           child: Text(
-//             "Welcome to Wallet Home Page",
-//             style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
-
-
-
-// ======================FINalProfileClicking
-
-
-// import 'package:flutter/material.dart';
-// import 'profile.dart';
-
-// class WalletHomePage extends StatefulWidget {
-//   const WalletHomePage({super.key});
-
-//   @override
-//   State<WalletHomePage> createState() => _WalletHomePageState();
-// }
-
-// class _WalletHomePageState extends State<WalletHomePage> {
-//   final String userName = "Dani Martinez";
-//   int _selectedIndex = 0;
-
-// //  
-
-// void _onItemTapped(int index) {
-//   if (_selectedIndex == index) return;
-
-//   setState(() {
-//     _selectedIndex = index;
-//   });
-
-//   if (index == 0) {
-//     // Navigate to HomePage (WalletHomePage)
-//     Navigator.pushReplacementNamed(context, '/home');
-//   } else if (index == 3) {
-//     // Navigate to Profile Page
-//     Navigator.push(
-//       context,
-//       MaterialPageRoute(builder: (context) => const ProfilePage()),
-//     );
-//   }
-// }
-
-
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       backgroundColor: Colors.white,
-//       bottomNavigationBar: BottomNavigationBar(
-//         type: BottomNavigationBarType.fixed,
-//         currentIndex: _selectedIndex,
-//         onTap: _onItemTapped,
-//         selectedItemColor: Colors.black,
-//         unselectedItemColor: Colors.black54,
-//         items: const [
-//           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-//           BottomNavigationBarItem(icon: Icon(Icons.receipt), label: 'Bills'),
-//           BottomNavigationBarItem(icon: Icon(Icons.history), label: 'History'),
-//           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
-//         ],
-//       ),
-//       body: SafeArea(
-//         child: Padding(
-//           padding: const EdgeInsets.all(16.0),
-//           child: Column(
-//             crossAxisAlignment: CrossAxisAlignment.start,
-//             children: [
-//               Row(
-//                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//                 children: [
-//                   Column(
-//                     crossAxisAlignment: CrossAxisAlignment.start,
-//                     children: [
-//                       Text("Hello $userName", style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-//                       const Text("Welcome Back", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-//                     ],
-//                   ),
-//                   CircleAvatar(
-//                     backgroundColor: Colors.blue,
-//                     radius: 20,
-//                     child: Text(
-//                       userName[0],
-//                       style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
-//                     ),
-//                   ),
-//                 ],
-//               ),
-//               const SizedBox(height: 20),
-//               Container(
-//                 decoration: BoxDecoration(
-//                   borderRadius: BorderRadius.circular(16),
-//                   gradient: const LinearGradient(
-//                     colors: [Colors.blueAccent, Colors.cyan],
-//                     begin: Alignment.topCenter,
-//                     end: Alignment.bottomCenter,
-//                   ),
-//                 ),
-//                 padding: const EdgeInsets.all(16),
-//                 child: Column(
-//                   crossAxisAlignment: CrossAxisAlignment.start,
-//                   children: [
-//                     Row(
-//                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//                       children: [
-//                         Row(
-//                           children: const [
-//                             Icon(Icons.account_balance_wallet, color: Colors.white),
-//                             SizedBox(width: 8),
-//                             Text("₹35,000", style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white)),
-//                           ],
-//                         ),
-//                         ElevatedButton(
-//                           onPressed: () {},
-//                           child: const Text("+ Add Money"),
-//                         ),
-//                       ],
-//                     ),
-//                     const SizedBox(height: 20),
-//                     Center(
-//                       child: Column(
-//                         children: const [
-//                           Icon(Icons.qr_code_scanner, size: 100, color: Colors.white),
-//                           SizedBox(height: 10),
-//                           Text("Tap to scan", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white)),
-//                         ],
-//                       ),
-//                     ),
-//                   ],
-//                 ),
-//               ),
-//             ],
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
-
-
-
-
-
-
 import 'package:flutter/material.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'profile.dart';
+import 'bill_page.dart';
+import 'QRScannerPage.dart';
+import 'scratch_win.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class WalletHomePage extends StatefulWidget {
   const WalletHomePage({super.key});
@@ -338,6 +16,136 @@ class WalletHomePage extends StatefulWidget {
 class _WalletHomePageState extends State<WalletHomePage> {
   final String userName = "Dani Martinez";
   int _selectedIndex = 0;
+  final FlutterSecureStorage _secureStorage = const FlutterSecureStorage();
+  double _walletBalance = 0.0;
+  int _gameMoney = 0;
+  @override
+  void initState() {
+    super.initState();
+    _loadBalances();
+  }
+
+  Future<void> _loadBalances() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    int gameMoney = prefs.getInt('gameMoney') ?? 0;
+    String? walletBalanceStr = await _secureStorage.read(key: 'wallet_balance');
+    double walletBalance =
+        walletBalanceStr != null ? double.parse(walletBalanceStr) : 0.0;
+
+    setState(() {
+      _gameMoney = gameMoney;
+      _walletBalance = walletBalance;
+    });
+  }
+
+  Future<void> _addGameMoney(int amount) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    int newGameMoney = _gameMoney + amount;
+    await prefs.setInt('gameMoney', newGameMoney);
+    setState(() {
+      _gameMoney = newGameMoney;
+    });
+  }
+
+  Future<void> _addMoney(double amount) async {
+    setState(() {
+      _walletBalance += amount;
+    });
+    await _secureStorage.write(
+      key: "wallet_balance",
+      value: _walletBalance.toString(),
+    );
+  }
+
+  void _showAddMoneyDialog() {
+    TextEditingController amountController = TextEditingController();
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: const Text("Add Money"),
+          content: TextField(
+            controller: amountController,
+            keyboardType: TextInputType.number,
+            decoration: const InputDecoration(labelText: "Enter Amount"),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: const Text("Cancel"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                double amount = double.tryParse(amountController.text) ?? 0.0;
+                if (amount > 0) {
+                  _addMoney(amount);
+                  Navigator.pop(context);
+                }
+              },
+              child: const Text("Add"),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  Future<void> _transferGameMoneyToWallet() async {
+    if (_gameMoney <= 0) return;
+
+    double newWalletBalance = _walletBalance + _gameMoney;
+
+    // Update wallet balance in secure storage
+    await _secureStorage.write(
+      key: "wallet_balance",
+      value: newWalletBalance.toString(),
+    );
+
+    // Reset game money in SharedPreferences
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setInt('gameMoney', 0);
+
+    setState(() {
+      _walletBalance = newWalletBalance;
+      _gameMoney = 0;
+    });
+
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(content: Text("₹$_gameMoney has been added to your wallet!")),
+    );
+  }
+
+  void _showWinCashDialog() {
+    if (_gameMoney <= 0) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text("No game money available to transfer.")),
+      );
+      return;
+    }
+
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: const Text("Transfer Game Money"),
+          content: Text("Do you want to transfer ₹$_gameMoney to your wallet?"),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: const Text("Cancel"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                _transferGameMoneyToWallet();
+                Navigator.pop(context);
+              },
+              child: const Text("Transfer"),
+            ),
+          ],
+        );
+      },
+    );
+  }
 
   void _onItemTapped(int index) {
     if (_selectedIndex == index) return;
@@ -350,6 +158,12 @@ class _WalletHomePageState extends State<WalletHomePage> {
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => const ProfilePage()),
+      );
+    }
+    if (index == 1) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => BillPage()),
       );
     }
   }
@@ -379,10 +193,11 @@ class _WalletHomePageState extends State<WalletHomePage> {
             children: [
               _buildHeader(),
               const SizedBox(height: 20),
+              _buildGameButtons(),
+              const SizedBox(height: 20),
               _buildWalletSection(),
               const SizedBox(height: 20),
               Expanded(child: _buildMainActionButton(context)),
-              _buildUtilityButtons(),
               _buildNoticeBoard(),
             ],
           ),
@@ -398,8 +213,14 @@ class _WalletHomePageState extends State<WalletHomePage> {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("Hello $userName", style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-            const Text("Welcome Back", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+            Text(
+              "Hello $userName",
+              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+            ),
+            const Text(
+              "Welcome Back",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
           ],
         ),
         CircleAvatar(
@@ -407,8 +228,34 @@ class _WalletHomePageState extends State<WalletHomePage> {
           radius: 20,
           child: Text(
             userName[0],
-            style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+            style: const TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
           ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildGameButtons() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: [
+        ElevatedButton(
+          onPressed: () async {
+            await Navigator.push(
+              context,
+              MaterialPageRoute(builder: (_) => GameScreen()),
+            );
+            _loadBalances(); // Reload game money after playing
+          },
+          child: const Text("Play & Win"),
+        ),
+        ElevatedButton(
+          onPressed: _showWinCashDialog,
+          child: Text("Win Cash: ₹$_gameMoney"),
         ),
       ],
     );
@@ -432,14 +279,21 @@ class _WalletHomePageState extends State<WalletHomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Row(
-                children: const [
-                  Icon(Icons.account_balance_wallet, color: Colors.white),
-                  SizedBox(width: 8),
-                  Text("₹35,000", style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white)),
+                children: [
+                  const Icon(Icons.account_balance_wallet, color: Colors.white),
+                  const SizedBox(width: 8),
+                  Text(
+                    "₹${_walletBalance.toStringAsFixed(2)}",
+                    style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
                 ],
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: _showAddMoneyDialog,
                 child: const Text("+ Add Money"),
               ),
             ],
@@ -449,50 +303,49 @@ class _WalletHomePageState extends State<WalletHomePage> {
     );
   }
 
-   Widget _buildMainActionButton(BuildContext context) {
-    double noticeBoardWidth = MediaQuery.of(context).size.width * 0.9;
+  Widget _buildMainActionButton(BuildContext context) {
     return Center(
-      child: Container(
-        width: noticeBoardWidth,
-        height: 200,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          color: Colors.white,
-          boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 5)],
-        ),
-        child: const Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(Icons.qr_code_scanner, size: 80, color: Colors.black),
-            SizedBox(height: 10),
-            Text("Tap to scan", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black)),
-          ],
+      child: GestureDetector(
+        onTap: () async {
+          String? scannedData = await Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const QRScannerPage()),
+          );
+
+          if (scannedData != null) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => BillPage(scannedData: scannedData),
+              ),
+            );
+          }
+        },
+        child: Container(
+          width: 200,
+          height: 200,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            color: Colors.white,
+            boxShadow: const [BoxShadow(color: Colors.black26, blurRadius: 5)],
+          ),
+          child: const Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(Icons.qr_code_scanner, size: 80, color: Colors.black),
+              SizedBox(height: 10),
+              Text(
+                "Tap to scan",
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
-    );
-  }
-
-
-  Widget _buildUtilityButtons() {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          _buildUtilityButton(Icons.account_balance_wallet, "Add Money"),
-          _buildUtilityButton(Icons.account_balance, "Check Balance"),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildUtilityButton(IconData icon, String text) {
-    return Column(
-      children: [
-        Icon(icon, size: 40, color: Colors.blue),
-        const SizedBox(height: 5),
-        Text(text, textAlign: TextAlign.center, style: const TextStyle(fontSize: 12)),
-      ],
     );
   }
 
@@ -505,19 +358,29 @@ class _WalletHomePageState extends State<WalletHomePage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const Text("Notice Board", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              const Text(
+                "Notice Board",
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
               TextButton(onPressed: () {}, child: const Text("Show All")),
             ],
           ),
           Card(
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10),
+            ),
             child: Padding(
               padding: const EdgeInsets.all(10),
               child: Row(
                 children: [
-                  Image.asset('assets/offer.png', width: 60),
+                  Image.asset('assets/images/kurkure.webp', width: 60),
                   const SizedBox(width: 10),
-                  const Expanded(child: Text("Hurry up! Grab the offer now", style: TextStyle(fontSize: 14))),
+                  const Expanded(
+                    child: Text(
+                      "Hurry up! Grab the offer now",
+                      style: TextStyle(fontSize: 14),
+                    ),
+                  ),
                 ],
               ),
             ),
