@@ -56,6 +56,7 @@ com.example.flutter_application_1.app-debug-54 C:\Users\navee\Desktop\SkipQ\app\
 com.example.flutter_application_1.app-debug-55 C:\Users\navee\Desktop\SkipQ\app\build\fluttertoast\intermediates\packaged_res\debug\packageDebugResources
 com.example.flutter_application_1.app-debug-56 C:\Users\navee\Desktop\SkipQ\app\build\local_auth_android\intermediates\packaged_res\debug\packageDebugResources
 com.example.flutter_application_1.app-debug-57 C:\Users\navee\Desktop\SkipQ\app\build\path_provider_android\intermediates\packaged_res\debug\packageDebugResources
-com.example.flutter_application_1.app-debug-58 C:\Users\navee\Desktop\SkipQ\app\build\qr_code_scanner_plus\intermediates\packaged_res\debug\packageDebugResources
-com.example.flutter_application_1.app-debug-59 C:\Users\navee\Desktop\SkipQ\app\build\razorpay_flutter\intermediates\packaged_res\debug\packageDebugResources
-com.example.flutter_application_1.app-debug-60 C:\Users\navee\Desktop\SkipQ\app\build\shared_preferences_android\intermediates\packaged_res\debug\packageDebugResources
+com.example.flutter_application_1.app-debug-58 C:\Users\navee\Desktop\SkipQ\app\build\printing\intermediates\packaged_res\debug\packageDebugResources
+com.example.flutter_application_1.app-debug-59 C:\Users\navee\Desktop\SkipQ\app\build\qr_code_scanner_plus\intermediates\packaged_res\debug\packageDebugResources
+com.example.flutter_application_1.app-debug-60 C:\Users\navee\Desktop\SkipQ\app\build\razorpay_flutter\intermediates\packaged_res\debug\packageDebugResources
+com.example.flutter_application_1.app-debug-61 C:\Users\navee\Desktop\SkipQ\app\build\shared_preferences_android\intermediates\packaged_res\debug\packageDebugResources

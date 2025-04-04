@@ -4,6 +4,8 @@ INJECTED from C:\Users\navee\Desktop\SkipQ\app\android\app\src\main\AndroidManif
 INJECTED from C:\Users\navee\Desktop\SkipQ\app\android\app\src\debug\AndroidManifest.xml
 MERGED from [:razorpay_flutter] C:\Users\navee\Desktop\SkipQ\app\build\razorpay_flutter\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-8:19
 MERGED from [:razorpay_flutter] C:\Users\navee\Desktop\SkipQ\app\build\razorpay_flutter\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-8:19
+MERGED from [:printing] C:\Users\navee\Desktop\SkipQ\app\build\printing\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-17:19
+MERGED from [:printing] C:\Users\navee\Desktop\SkipQ\app\build\printing\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-17:19
 MERGED from [androidx.window:window:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\aed2861b2b6894f7067df3f3f96b791f\transformed\jetified-window-1.2.0\AndroidManifest.xml:22:5-29:19
 MERGED from [androidx.window:window:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\aed2861b2b6894f7067df3f3f96b791f\transformed\jetified-window-1.2.0\AndroidManifest.xml:22:5-29:19
 MERGED from [com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:41:5-79:19
@@ -56,6 +58,7 @@ MERGED from [:flutter_secure_storage] C:\Users\navee\Desktop\SkipQ\app\build\flu
 MERGED from [:razorpay_flutter] C:\Users\navee\Desktop\SkipQ\app\build\razorpay_flutter\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-10:12
 MERGED from [:fluttertoast] C:\Users\navee\Desktop\SkipQ\app\build\fluttertoast\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-7:12
 MERGED from [:path_provider_android] C:\Users\navee\Desktop\SkipQ\app\build\path_provider_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-7:12
+MERGED from [:printing] C:\Users\navee\Desktop\SkipQ\app\build\printing\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-19:12
 MERGED from [:qr_code_scanner_plus] C:\Users\navee\Desktop\SkipQ\app\build\qr_code_scanner_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:2:1-10:12
 MERGED from [androidx.biometric:biometric:1.1.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\af70b7946cf7eeb0fa41336d24148827\transformed\biometric-1.1.0\AndroidManifest.xml:17:1-29:12
 MERGED from [androidx.preference:preference:1.2.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\12a085f4af97d8500c9432a48145ea1b\transformed\preference-1.2.1\AndroidManifest.xml:17:1-24:12
@@ -175,6 +178,8 @@ MERGED from [:fluttertoast] C:\Users\navee\Desktop\SkipQ\app\build\fluttertoast\
 MERGED from [:fluttertoast] C:\Users\navee\Desktop\SkipQ\app\build\fluttertoast\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider_android] C:\Users\navee\Desktop\SkipQ\app\build\path_provider_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider_android] C:\Users\navee\Desktop\SkipQ\app\build\path_provider_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:printing] C:\Users\navee\Desktop\SkipQ\app\build\printing\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
+MERGED from [:printing] C:\Users\navee\Desktop\SkipQ\app\build\printing\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:5:5-44
 MERGED from [:qr_code_scanner_plus] C:\Users\navee\Desktop\SkipQ\app\build\qr_code_scanner_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:6:5-8:67
 MERGED from [:qr_code_scanner_plus] C:\Users\navee\Desktop\SkipQ\app\build\qr_code_scanner_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:6:5-8:67
 MERGED from [androidx.biometric:biometric:1.1.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\af70b7946cf7eeb0fa41336d24148827\transformed\biometric-1.1.0\AndroidManifest.xml:20:5-22:41
@@ -325,6 +330,22 @@ MERGED from [androidx.biometric:biometric:1.1.0] C:\Users\navee\.gradle\caches\8
 MERGED from [androidx.biometric:biometric:1.1.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\af70b7946cf7eeb0fa41336d24148827\transformed\biometric-1.1.0\AndroidManifest.xml:24:5-72
 	android:name
 		ADDED from [:local_auth_android] C:\Users\navee\Desktop\SkipQ\app\build\local_auth_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:22-69
+provider#net.nfet.flutter.printing.PrintFileProvider
+ADDED from [:printing] C:\Users\navee\Desktop\SkipQ\app\build\printing\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:8:9-16:20
+	android:grantUriPermissions
+		ADDED from [:printing] C:\Users\navee\Desktop\SkipQ\app\build\printing\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:12:13-47
+	android:authorities
+		ADDED from [:printing] C:\Users\navee\Desktop\SkipQ\app\build\printing\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:10:13-68
+	android:exported
+		ADDED from [:printing] C:\Users\navee\Desktop\SkipQ\app\build\printing\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [:printing] C:\Users\navee\Desktop\SkipQ\app\build\printing\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:9:13-71
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:printing] C:\Users\navee\Desktop\SkipQ\app\build\printing\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:13-15:71
+	android:resource
+		ADDED from [:printing] C:\Users\navee\Desktop\SkipQ\app\build\printing\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:17-68
+	android:name
+		ADDED from [:printing] C:\Users\navee\Desktop\SkipQ\app\build\printing\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:17-67
 uses-permission#android.permission.USE_FINGERPRINT
 ADDED from [androidx.biometric:biometric:1.1.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\af70b7946cf7eeb0fa41336d24148827\transformed\biometric-1.1.0\AndroidManifest.xml:27:5-74
 	android:name

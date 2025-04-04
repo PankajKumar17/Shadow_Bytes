@@ -1,3 +1,4 @@
+com.example.flutter_application_1:xml/flutter_printing_file_paths = 0x7f120001
 com.example.flutter_application_1:styleable/zxing_view = 0x7f11004e
 com.example.flutter_application_1:styleable/zxing_camera_preview = 0x7f11004c
 com.example.flutter_application_1:styleable/ViewStubCompat = 0x7f110049

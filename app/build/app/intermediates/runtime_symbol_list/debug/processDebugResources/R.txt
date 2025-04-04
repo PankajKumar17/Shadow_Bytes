@@ -2511,3 +2511,4 @@ int styleable zxing_finder_zxing_viewfinder_mask 4
 int[] styleable zxing_view { 0x7f0401b7 }
 int styleable zxing_view_zxing_scanner_layout 0
 int xml file_provider_path_checkout 0x7f120000
+int xml flutter_printing_file_paths 0x7f120001
