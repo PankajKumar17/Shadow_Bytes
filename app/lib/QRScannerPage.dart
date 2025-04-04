@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:qr_code_scanner_plus/qr_code_scanner_plus.dart';
-import 'bill_page.dart';
 
 class QRScannerPage extends StatefulWidget {
   const QRScannerPage({super.key});
@@ -13,7 +12,7 @@ class _QRScannerPageState extends State<QRScannerPage> {
   final GlobalKey qrKey = GlobalKey(debugLabel: 'QR');
   QRViewController? controller;
   bool isFlashOn = false;
-  bool isScanning = true; // Prevent multiple scans
+  bool isProcessing = false;
 
   @override
   void reassemble() {
@@ -79,29 +78,30 @@ class _QRScannerPageState extends State<QRScannerPage> {
     );
   }
 
-void _onQRViewCreated(QRViewController controller) {
-  setState(() {
-    this.controller = controller;
-  });
+  void _onQRViewCreated(QRViewController controller) {
+    setState(() {
+      this.controller = controller;
+    });
 
-  controller.scannedDataStream.listen((scanData) {
-    if (isScanning) {
-      isScanning = false; // Prevent multiple scans
+    controller.scannedDataStream.listen((scanData) async {
+      if (!isProcessing && scanData.code != null) {
+        isProcessing = true;
 
-      debugPrint("🔍 Scanned Data (Raw): ${scanData.code}");
+        debugPrint("🔍 Scanned Data (Raw): ${scanData.code}");
 
-      // Replace single quotes with double quotes to make it valid JSON
-      String jsonString = scanData.code!
-          .replaceAll("'", "\""); 
+        String jsonString = scanData.code!.replaceAll("'", "\"");
 
-      debugPrint("🔍 Scanned Data (Fixed JSON): $jsonString");
+        debugPrint("🔍 Scanned Data (Fixed JSON): $jsonString");
 
-      // Navigate back with corrected JSON string
-      Navigator.pop(context, jsonString);
-    }
-  });
-}
 
+        await controller.pauseCamera();
+        await Future.delayed(const Duration(milliseconds: 800)); 
+        if (mounted) {
+          Navigator.pop(context, jsonString);
+        }
+      }
+    });
+  }
 
   @override
   void dispose() {

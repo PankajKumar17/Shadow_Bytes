@@ -1,0 +1,203 @@
+from pptx import Presentation
+
+from pptx.util import Inches
+
+
+
+# Create a PowerPoint presentation
+
+prs = Presentation()
+
+
+
+# Function to add slides
+
+def add_slide(title, content, bullet_points=False):
+
+    slide_layout = prs.slide_layouts[1]  # Title and Content Layout
+
+    slide = prs.slides.add_slide(slide_layout)
+
+    title_placeholder = slide.shapes.title
+
+    content_placeholder = slide.placeholders[1]
+
+
+
+    title_placeholder.text = title
+
+    if bullet_points:
+
+        for point in content:
+
+            content_placeholder.text += f"\n• {point}"
+
+    else:
+
+        content_placeholder.text = content
+
+
+
+# Slide 1: Title Slide
+
+slide_layout = prs.slide_layouts[0]  # Title Slide Layout
+
+slide = prs.slides.add_slide(slide_layout)
+
+slide.shapes.title.text = "Smart Checkout System"
+
+slide.placeholders[1].text = "A Seamless Retail Experience 🚀\nTeam Name | Date"
+
+
+
+# Slide 2: Problem Statement
+
+add_slide("Problem Statement", [
+
+    "🕒 Long queues & waiting times",
+
+    "🛒 Inefficient payment verification",
+
+    "🌐 Dependency on internet-based transactions"
+
+], bullet_points=True)
+
+
+
+# Slide 3: Proposed Solution
+
+add_slide("Proposed Solution", [
+
+    "✅ RFID-based automatic product detection",
+
+    "✅ Seamless QR-based mobile payments",
+
+    "✅ Supports online & offline payments"
+
+], bullet_points=True)
+
+
+
+# Slide 4: System Architecture
+
+add_slide("System Architecture", [
+
+    "🛒 Smart Checkout System (RFID-based detection)",
+
+    "💾 Enterprise Server (Billing & transaction processing)",
+
+    "📱 Mobile App (Payment & authentication)",
+
+    "💰 Payment System (Online & offline modes)",
+
+    "📊 Mall Dashboard (Retailer transaction tracking)"
+
+], bullet_points=True)
+
+
+
+# Slide 5: How It Works
+
+add_slide("How It Works", [
+
+    ".. Add items to cart 🛍",
+
+    ".. RFID scanner detects products 📡",
+
+    ".. Bill syncs with app via QR code 📱",
+
+    ".. Choose payment method 💳",
+
+    ".. If offline, biometric authentication 🔐",
+
+    ".. QR scan at exit for fraud prevention 🛑",
+
+    ".. Payment confirmed & exit gates open 🚪✅"
+
+], bullet_points=True)
+
+
+
+# Slide 6: Offline Payment System
+
+add_slide("Offline Payment System", [
+
+    "Preload money into an offline wallet",
+
+    "Biometric authentication before checkout",
+
+    "QR code verification at exit",
+
+    "Automatic wallet deduction & payment sync"
+
+], bullet_points=True)
+
+
+
+# Slide 7: Technologies Used
+
+add_slide("Technologies Used", [
+
+    "Backend: Node.js",
+
+    "Database: MongoDB Atlas, Firebase",
+
+    "Frontend App: Flutter",
+
+    "Payment Gateway: UPI, Razorpay",
+
+    "Mall Dashboard: React.js",
+
+    "RFID System: NFC, RFID Scanners"
+
+], bullet_points=True)
+
+
+
+# Slide 8: Future Enhancements
+
+add_slide("Future Enhancements", [
+
+    "🚀 AI-based product recommendations",
+
+    "🔐 Blockchain integration for security",
+
+    "🔄 Expand to multi-store ecosystems"
+
+], bullet_points=True)
+
+
+
+# Slide 9: Conclusion
+
+add_slide("Conclusion", [
+
+    "Fast, secure, and reliable checkout experience 🏪",
+
+    "Works even in low-network environments 📡",
+
+    "Transforms retail shopping with automation ⚡"
+
+], bullet_points=True)
+
+
+
+# Slide 10: Thank You
+
+slide_layout = prs.slide_layouts[1]  # Title and Content Layout
+
+slide = prs.slides.add_slide(slide_layout)
+
+slide.shapes.title.text = "👏 Thank You!"
+
+slide.placeholders[1].text = "Questions? 🤔"
+
+
+
+# Save the PowerPoint file
+
+prs.save("Smart_Checkout_Presentation.pptx")
+
+
+
+print("Presentation created successfully: Smart_Checkout_Presentation.pptx")

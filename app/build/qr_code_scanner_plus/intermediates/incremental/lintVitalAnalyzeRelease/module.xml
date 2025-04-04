@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="C:\Users\navee\AppData\Local\Pub\Cache\hosted\pub.dev\qr_code_scanner_plus-2.0.10+1\android"
+    name=":qr_code_scanner_plus"
+    type="LIBRARY"
+    maven="net.touchcapture.qr.flutterqrplus:qr_code_scanner_plus:1.0-SNAPSHOT"
+    agpVersion="8.7.0"
+    buildFolder="C:\Users\navee\Desktop\SkipQ\app\build\qr_code_scanner_plus"
+    bootClassPath="C:\Users\navee\AppData\Local\Android\sdk\platforms\android-34\android.jar;C:\Users\navee\AppData\Local\Android\sdk\build-tools\34.0.0\core-lambda-stubs.jar"
+    javaSourceLevel="11"
+    compileTarget="android-34"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

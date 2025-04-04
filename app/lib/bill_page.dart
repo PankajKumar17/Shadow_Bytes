@@ -4,6 +4,7 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'home_page.dart';
 import 'profile.dart';
 import 'services/auth_service.dart';
+import 'razorpay_button.dart';
 
 class BillPage extends StatefulWidget {
   final String? scannedData;
@@ -37,29 +38,17 @@ class _BillPageState extends State<BillPage> {
   void _loadScannedProducts() {
     if (widget.scannedData != null) {
       try {
-        String jsonString = widget.scannedData!;
-
-        // Replace single quotes with double quotes before decoding
-        jsonString = jsonString.replaceAll("'", "\"");
-
+        String jsonString = widget.scannedData!.replaceAll("'", "\"");
         final Map<String, dynamic> decodedData = jsonDecode(jsonString);
-
-        debugPrint("✅ Parsed Scanned Data: $decodedData");
-
         final List<dynamic> products = decodedData['products'] ?? [];
 
         setState(() {
-          items =
-              products.map((product) {
-                return {
-                  "name": product['name'],
-                  "price": product['price'],
-                  "pictureUrl":
-                      product['pictureUrl'].startsWith('//')
-                          ? 'https:${product['pictureUrl']}' // Ensure valid URL
-                          : product['pictureUrl'],
-                };
-              }).toList();
+          items = products.map((product) {
+            return {
+              "name": product['name'],
+              "price": product['price'],
+            };
+          }).toList();
         });
       } catch (e) {
         debugPrint("❌ Error parsing scanned data: $e");
@@ -68,10 +57,7 @@ class _BillPageState extends State<BillPage> {
   }
 
   Future<void> _updateWalletBalance(double newBalance) async {
-    await _secureStorage.write(
-      key: 'wallet_balance',
-      value: newBalance.toString(),
-    );
+    await _secureStorage.write(key: 'wallet_balance', value: newBalance.toString());
     setState(() {
       _walletBalance = newBalance;
     });
@@ -80,61 +66,53 @@ class _BillPageState extends State<BillPage> {
   @override
   Widget build(BuildContext context) {
     double totalPrice = items.fold(0, (sum, item) => sum + item['price']);
-
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Bill Summary"),
+        title: const Text("Bill Summary", style: TextStyle(fontWeight: FontWeight.bold)),
         backgroundColor: Colors.blue,
       ),
-      body: Column(
-        children: [
-          Expanded(
-            child: ListView.builder(
-              itemCount: items.length,
-              itemBuilder: (context, index) {
-                var item = items[index];
-                return Card(
-                  child: ListTile(
-                    leading: Image.network(
-                      item['pictureUrl'],
-                      width: 50,
-                      height: 50,
-                      fit: BoxFit.cover,
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            Expanded(
+              child: ListView.builder(
+                itemCount: items.length,
+                itemBuilder: (context, index) {
+                  var item = items[index];
+                  return Card(
+                    margin: const EdgeInsets.symmetric(vertical: 8.0),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(item['name'], style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
+                          Text("₹${item['price']}", style: const TextStyle(fontSize: 14, color: Colors.green)),
+                        ],
+                      ),
                     ),
-                    title: Text(item['name']),
-                    subtitle: Text("₹${item['price']}"),
-                  ),
-                );
-              },
+                  );
+                },
+              ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(16.0),
-            child: Column(
-              children: [
-                Text(
-                  "Total: ₹$totalPrice",
-                  style: const TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                const SizedBox(height: 10),
-                ElevatedButton(
-                  onPressed: () => _authenticateAndProceed(context, totalPrice),
-                  style: ElevatedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 50,
-                      vertical: 15,
-                    ),
-                    textStyle: const TextStyle(fontSize: 18),
-                  ),
-                  child: const Text("Pay"),
-                ),
-              ],
+            const Divider(thickness: 1.5),
+            Text(
+              "Total: ₹$totalPrice",
+              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
-          ),
-        ],
+            const SizedBox(height: 15),
+            ElevatedButton(
+              onPressed: () => _authenticateAndProceed(context, totalPrice),
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+                textStyle: const TextStyle(fontSize: 18),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+              ),
+              child: const Text("Pay"),
+            ),
+          ],
+        ),
       ),
       bottomNavigationBar: _buildBottomNavigationBar(context),
     );
@@ -145,9 +123,7 @@ class _BillPageState extends State<BillPage> {
     if (authenticated) {
       _showPaymentDialog(context, totalPrice);
     } else {
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(const SnackBar(content: Text("Authentication Failed")));
+      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Authentication Failed")));
     }
   }
 
@@ -165,14 +141,18 @@ class _BillPageState extends State<BillPage> {
               },
               child: const Text("Offline Pay"),
             ),
-            TextButton(
-              onPressed: () {
+            RazorpayButton(
+              amount: (totalPrice * 100).toInt(),
+              onPaymentSuccess: (paidAmount) {
                 Navigator.pop(context);
+                _updateWalletBalance(_walletBalance + paidAmount);
+                setState(() {
+                  items.clear();
+                });
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text("Online Payment Initiated")),
+                  const SnackBar(content: Text("Online Payment Successful")),
                 );
               },
-              child: const Text("Online Pay"),
             ),
           ],
         );
@@ -184,17 +164,11 @@ class _BillPageState extends State<BillPage> {
     if (_walletBalance >= totalPrice) {
       double newBalance = _walletBalance - totalPrice;
       _updateWalletBalance(newBalance);
-
       setState(() {
-        items.clear(); // Clear the bill after payment
+        items.clear();
       });
-
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            "Payment Successful! Remaining Wallet Balance: ₹$newBalance",
-          ),
-        ),
+        SnackBar(content: Text("Payment Successful! Remaining Wallet Balance: ₹$newBalance")),
       );
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -212,27 +186,16 @@ class _BillPageState extends State<BillPage> {
       onTap: (index) {
         switch (index) {
           case 0:
-            Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(builder: (context) => const WalletHomePage()),
-            );
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const WalletHomePage()));
             break;
           case 1:
-            Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(builder: (context) => const BillPage()),
-            );
+            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const BillPage()));
             break;
           case 2:
-            ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(content: Text("History Feature Coming Soon!")),
-            );
+            ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("History Feature Coming Soon!")));
             break;
           case 3:
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const ProfilePage()),
-            );
+            Navigator.push(context, MaterialPageRoute(builder: (context) => const ProfilePage()));
             break;
         }
       },

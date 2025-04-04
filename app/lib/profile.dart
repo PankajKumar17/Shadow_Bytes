@@ -1,88 +1,102 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'home_page.dart';
 import 'bill_page.dart';
 
-class ProfilePage extends StatelessWidget {
+class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Colors.white, Colors.lightBlueAccent],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          ),
-        ),
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              _buildProfileHeader(),
-              _buildInfoCard(),
-              _buildSettingsCard(),
-              _buildHelpSection(),
-            ],
-          ),
+  _ProfilePageState createState() => _ProfilePageState();
+}
+
+class _ProfilePageState extends State<ProfilePage> {
+  final FlutterSecureStorage _secureStorage = const FlutterSecureStorage();
+  String _userName = "User"; // Default value
+  String _profileImagePath = 'assets/profile.jpg'; // Default profile image
+
+  @override
+  void initState() {
+    super.initState();
+    _loadUserDetails();
+  }
+
+  Future<void> _loadUserDetails() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    String? userName = prefs.getString('user_name') ?? "User";
+
+    setState(() {
+      _userName = userName;
+      // If you plan to allow users to upload a profile picture, fetch it from secure storage.
+    });
+  }
+
+ @override
+Widget build(BuildContext context) {
+  return Scaffold(
+    body: Container(
+      decoration: const BoxDecoration(
+        gradient: LinearGradient(
+          colors: [Colors.white, Colors.lightBlueAccent],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
         ),
       ),
-      bottomNavigationBar: _buildBottomNavigationBar(context),
-    );
-  }
+      child: Column(
+        children: [
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  _buildProfileHeader(),
+                  _buildSettingsCard(),
+                ],
+              ),
+            ),
+          ),
+          _buildHelpSection(), // Placed at the bottom
+        ],
+      ),
+    ),
+    bottomNavigationBar: _buildBottomNavigationBar(context),
+  );
+}
 
   Widget _buildProfileHeader() {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 20),
       child: Column(
-        children: const [
-          Align(
+        children: [
+          const Align(
             alignment: Alignment.topLeft,
             child: Text(
               "My Profile,",
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           CircleAvatar(
-            radius: 50,
-            backgroundImage: AssetImage('assets/profile.jpg'),
+            backgroundColor: Colors.blue,
+            radius: 80,
+            child: Text(
+              _userName != null && _userName!.isNotEmpty
+                  ? _userName![0].toUpperCase()
+                  : "A",
+              style: const TextStyle(
+                fontSize: 80,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Text(
-            'Dani Martinez',
-            style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+            _userName,
+            style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
         ],
-      ),
-    );
-  }
-
-  Widget _buildInfoCard() {
-    return Card(
-      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
-            Text(
-              'Contact Details',
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-            SizedBox(height: 8),
-            Text(
-              'Mobile No.: +1 234 567 890',
-              style: TextStyle(color: Colors.black54),
-            ),
-            Text(
-              'Address: 1234 Elm Street, Springfield, USA',
-              style: TextStyle(color: Colors.black54),
-            ),
-          ],
-        ),
       ),
     );
   }
@@ -100,7 +114,6 @@ class ProfilePage extends StatelessWidget {
               'Settings',
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
-            _buildSettingsOption(Icons.notifications, 'Allow Notifications'),
             _buildSettingsOption(Icons.dark_mode, 'Dark Mode'),
             _buildSettingsOption(Icons.payment, 'Payment Methods'),
           ],
@@ -160,7 +173,6 @@ class ProfilePage extends StatelessWidget {
       unselectedItemColor: Colors.black54,
       onTap: (index) {
         if (index == 0) {
-          // Navigate to Home (WalletHomePage)
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(builder: (context) => const WalletHomePage()),

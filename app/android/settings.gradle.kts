@@ -22,4 +22,6 @@ plugins {
     id("org.jetbrains.kotlin.android") version "1.8.22" apply false
 }
 
+// Include app and Razorpay Flutter plugin
 include(":app")
+include(":razorpay_flutter")

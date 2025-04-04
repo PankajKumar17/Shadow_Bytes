@@ -5,6 +5,7 @@ import 'bill_page.dart';
 import 'QRScannerPage.dart';
 import 'scratch_win.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'razorpay_button.dart'; // Import RazorpayButton
 
 class WalletHomePage extends StatefulWidget {
   const WalletHomePage({super.key});
@@ -14,25 +15,28 @@ class WalletHomePage extends StatefulWidget {
 }
 
 class _WalletHomePageState extends State<WalletHomePage> {
-  final String userName = "Dani Martinez";
+  String? _userName;
   int _selectedIndex = 0;
   final FlutterSecureStorage _secureStorage = const FlutterSecureStorage();
   double _walletBalance = 0.0;
   int _gameMoney = 0;
+
   @override
   void initState() {
     super.initState();
-    _loadBalances();
+    _loadUserData();
   }
 
-  Future<void> _loadBalances() async {
+  Future<void> _loadUserData() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
+    String? userName = prefs.getString('user_name') ?? "User";
     int gameMoney = prefs.getInt('gameMoney') ?? 0;
     String? walletBalanceStr = await _secureStorage.read(key: 'wallet_balance');
     double walletBalance =
         walletBalanceStr != null ? double.parse(walletBalanceStr) : 0.0;
 
     setState(() {
+      _userName = userName;
       _gameMoney = gameMoney;
       _walletBalance = walletBalance;
     });
@@ -59,32 +63,53 @@ class _WalletHomePageState extends State<WalletHomePage> {
 
   void _showAddMoneyDialog() {
     TextEditingController amountController = TextEditingController();
+
     showDialog(
       context: context,
       builder: (context) {
         return AlertDialog(
           title: const Text("Add Money"),
-          content: TextField(
-            controller: amountController,
-            keyboardType: TextInputType.number,
-            decoration: const InputDecoration(labelText: "Enter Amount"),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              TextField(
+                controller: amountController,
+                keyboardType: TextInputType.number,
+                decoration: const InputDecoration(labelText: "Enter Amount"),
+              ),
+              const SizedBox(height: 10),
+              ElevatedButton(
+                onPressed: () {
+                  int? enteredAmount = int.tryParse(amountController.text);
+                  if (enteredAmount == null || enteredAmount <= 0) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(content: Text("Invalid amount")),
+                    );
+                    return;
+                  }
+
+                  Navigator.pop(context); // Close dialog before opening Razorpay
+
+                  showDialog(
+                    context: context,
+                    builder: (context) {
+                      return AlertDialog(
+                        title: const Text("Confirm Payment"),
+                        content: RazorpayButton(
+                          amount: enteredAmount, // Pass the correct amount
+                          onPaymentSuccess: (amount) {
+                            _addMoney(amount);
+                            Navigator.pop(context);
+                          },
+                        ),
+                      );
+                    },
+                  );
+                },
+                child: const Text("Pay with Razorpay"),
+              ),
+            ],
           ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: const Text("Cancel"),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                double amount = double.tryParse(amountController.text) ?? 0.0;
-                if (amount > 0) {
-                  _addMoney(amount);
-                  Navigator.pop(context);
-                }
-              },
-              child: const Text("Add"),
-            ),
-          ],
         );
       },
     );
@@ -214,7 +239,7 @@ class _WalletHomePageState extends State<WalletHomePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Hello $userName",
+              "Hello $_userName",
               style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
             ),
             const Text(
@@ -227,7 +252,9 @@ class _WalletHomePageState extends State<WalletHomePage> {
           backgroundColor: Colors.blue,
           radius: 20,
           child: Text(
-            userName[0],
+            _userName != null && _userName!.isNotEmpty
+                ? _userName![0].toUpperCase()
+                : "A",
             style: const TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
@@ -249,7 +276,7 @@ class _WalletHomePageState extends State<WalletHomePage> {
               context,
               MaterialPageRoute(builder: (_) => GameScreen()),
             );
-            _loadBalances(); // Reload game money after playing
+            _loadUserData();
           },
           child: const Text("Play & Win"),
         ),

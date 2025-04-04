@@ -34,201 +34,365 @@
 27-->C:\Users\navee\Desktop\SkipQ\app\android\app\src\main\AndroidManifest.xml:42:13-50
 27-->C:\Users\navee\Desktop\SkipQ\app\android\app\src\main\AndroidManifest.xml:42:19-48
 28        </intent>
-29    </queries>
-30
-31    <uses-permission android:name="android.permission.USE_BIOMETRIC" /> <!-- suppress DeprecatedClassUsageInspection -->
-31-->[:local_auth_android] C:\Users\navee\Desktop\SkipQ\app\build\local_auth_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-72
-31-->[:local_auth_android] C:\Users\navee\Desktop\SkipQ\app\build\local_auth_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:22-69
-32    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
-32-->[androidx.biometric:biometric:1.1.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\af70b7946cf7eeb0fa41336d24148827\transformed\biometric-1.1.0\AndroidManifest.xml:27:5-74
-32-->[androidx.biometric:biometric:1.1.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\af70b7946cf7eeb0fa41336d24148827\transformed\biometric-1.1.0\AndroidManifest.xml:27:22-71
-33
-34    <permission
-34-->[androidx.core:core:1.13.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\dfc2fbca530748e569b0737b09fa016f\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
-35        android:name="com.example.flutter_application_1.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-35-->[androidx.core:core:1.13.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\dfc2fbca530748e569b0737b09fa016f\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
-36        android:protectionLevel="signature" />
-36-->[androidx.core:core:1.13.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\dfc2fbca530748e569b0737b09fa016f\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
-37
-38    <uses-permission android:name="com.example.flutter_application_1.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-38-->[androidx.core:core:1.13.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\dfc2fbca530748e569b0737b09fa016f\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
-38-->[androidx.core:core:1.13.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\dfc2fbca530748e569b0737b09fa016f\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
-39    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
-39-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:22:5-65
-39-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:22:22-62
-40    <uses-feature
-40-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:25:5-27:36
-41        android:name="android.hardware.camera"
-41-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:26:9-47
-42        android:required="false" />
-42-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:27:9-33
-43    <uses-feature
-43-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:28:5-30:36
-44        android:name="android.hardware.camera.front"
-44-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:29:9-53
-45        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
-45-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:30:9-33
-46    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
-47    <uses-feature
-47-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:33:5-35:36
-48        android:name="android.hardware.camera.autofocus"
-48-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:34:9-57
-49        android:required="false" />
-49-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:35:9-33
-50    <uses-feature
-50-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:36:5-38:36
-51        android:name="android.hardware.camera.flash"
-51-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:37:9-53
-52        android:required="false" />
-52-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:38:9-33
-53    <uses-feature
-53-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:39:5-41:36
-54        android:name="android.hardware.screen.landscape"
-54-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:40:9-57
-55        android:required="false" />
-55-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:41:9-33
-56    <uses-feature
-56-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:42:5-44:36
-57        android:name="android.hardware.wifi"
-57-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:43:9-45
-58        android:required="false" />
-58-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:44:9-33
-59
-60    <application
-61        android:name="android.app.Application"
-62        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-62-->[androidx.core:core:1.13.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\dfc2fbca530748e569b0737b09fa016f\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
-63        android:debuggable="true"
-64        android:extractNativeLibs="true"
-65        android:icon="@mipmap/ic_launcher"
-66        android:label="flutter_application_1" >
-67        <activity
-68            android:name="com.example.flutter_application_1.MainActivity"
-69            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-70            android:exported="true"
-71            android:hardwareAccelerated="true"
-72            android:launchMode="singleTop"
-73            android:taskAffinity=""
-74            android:theme="@style/LaunchTheme"
-75            android:windowSoftInputMode="adjustResize" >
-76
-77            <!--
-78                 Specifies an Android theme to apply to this Activity as soon as
-79                 the Android process has started. This theme is visible to the user
-80                 while the Flutter UI initializes. After that, this theme continues
-81                 to determine the Window background behind the Flutter UI.
-82            -->
-83            <meta-data
-84                android:name="io.flutter.embedding.android.NormalTheme"
-85                android:resource="@style/NormalTheme" />
-86
-87            <intent-filter>
-88                <action android:name="android.intent.action.MAIN" />
-89
-90                <category android:name="android.intent.category.LAUNCHER" />
-91            </intent-filter>
-92        </activity>
-93        <!--
-94             Don't delete the meta-data below.
-95             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-96        -->
-97        <meta-data
-98            android:name="flutterEmbedding"
-99            android:value="2" />
-100
-101        <uses-library
-101-->[androidx.window:window:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\aed2861b2b6894f7067df3f3f96b791f\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
-102            android:name="androidx.window.extensions"
-102-->[androidx.window:window:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\aed2861b2b6894f7067df3f3f96b791f\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
-103            android:required="false" />
-103-->[androidx.window:window:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\aed2861b2b6894f7067df3f3f96b791f\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
-104        <uses-library
-104-->[androidx.window:window:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\aed2861b2b6894f7067df3f3f96b791f\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
-105            android:name="androidx.window.sidecar"
-105-->[androidx.window:window:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\aed2861b2b6894f7067df3f3f96b791f\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
-106            android:required="false" />
-106-->[androidx.window:window:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\aed2861b2b6894f7067df3f3f96b791f\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
-107
-108        <provider
-108-->[androidx.emoji2:emoji2:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\2572c773145932f08e3b72fd0d530e61\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-109            android:name="androidx.startup.InitializationProvider"
-109-->[androidx.emoji2:emoji2:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\2572c773145932f08e3b72fd0d530e61\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-110            android:authorities="com.example.flutter_application_1.androidx-startup"
-110-->[androidx.emoji2:emoji2:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\2572c773145932f08e3b72fd0d530e61\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
-111            android:exported="false" >
-111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\2572c773145932f08e3b72fd0d530e61\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
-112            <meta-data
-112-->[androidx.emoji2:emoji2:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\2572c773145932f08e3b72fd0d530e61\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-113                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-113-->[androidx.emoji2:emoji2:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\2572c773145932f08e3b72fd0d530e61\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-114                android:value="androidx.startup" />
-114-->[androidx.emoji2:emoji2:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\2572c773145932f08e3b72fd0d530e61\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
-115            <meta-data
-115-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\bb10008c4b33ee9597583412a41828ed\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
-116                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-116-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\bb10008c4b33ee9597583412a41828ed\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
-117                android:value="androidx.startup" />
-117-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\bb10008c4b33ee9597583412a41828ed\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
-118            <meta-data
-118-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-119                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-119-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-120                android:value="androidx.startup" />
-120-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-121        </provider>
+29        <intent>
+29-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:11:9-17:18
+30            <action android:name="android.intent.action.VIEW" />
+30-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:12:13-65
+30-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:12:21-62
+31
+32            <data
+32-->C:\Users\navee\Desktop\SkipQ\app\android\app\src\main\AndroidManifest.xml:42:13-50
+33                android:mimeType="*/*"
+33-->C:\Users\navee\Desktop\SkipQ\app\android\app\src\main\AndroidManifest.xml:42:19-48
+34                android:scheme="*" />
+35        </intent>
+36        <intent>
+36-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:18:9-27:18
+37            <action android:name="android.intent.action.VIEW" />
+37-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:12:13-65
+37-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:12:21-62
+38
+39            <category android:name="android.intent.category.BROWSABLE" />
+39-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:21:13-74
+39-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:21:23-71
+40
+41            <data
+41-->C:\Users\navee\Desktop\SkipQ\app\android\app\src\main\AndroidManifest.xml:42:13-50
+42                android:host="pay"
+43                android:mimeType="*/*"
+43-->C:\Users\navee\Desktop\SkipQ\app\android\app\src\main\AndroidManifest.xml:42:19-48
+44                android:scheme="upi" />
+45        </intent>
+46        <intent>
+46-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:28:9-30:18
+47            <action android:name="android.intent.action.MAIN" />
+47-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:29:13-65
+47-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:29:21-62
+48        </intent>
+49        <intent>
+49-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:31:9-35:18
+50            <action android:name="android.intent.action.SEND" />
+50-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:32:13-65
+50-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:32:21-62
+51
+52            <data android:mimeType="*/*" />
+52-->C:\Users\navee\Desktop\SkipQ\app\android\app\src\main\AndroidManifest.xml:42:13-50
+52-->C:\Users\navee\Desktop\SkipQ\app\android\app\src\main\AndroidManifest.xml:42:19-48
+53        </intent>
+54        <intent>
+54-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:36:9-38:18
+55            <action android:name="rzp.device_token.share" />
+55-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:37:13-61
+55-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:37:21-58
+56        </intent>
+57    </queries>
+58
+59    <uses-permission android:name="android.permission.USE_BIOMETRIC" /> <!-- suppress DeprecatedClassUsageInspection -->
+59-->[:local_auth_android] C:\Users\navee\Desktop\SkipQ\app\build\local_auth_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:5-72
+59-->[:local_auth_android] C:\Users\navee\Desktop\SkipQ\app\build\local_auth_android\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:7:22-69
+60    <uses-permission android:name="android.permission.USE_FINGERPRINT" /> <!-- Include required permissions for Google Maps API to run. -->
+60-->[androidx.biometric:biometric:1.1.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\af70b7946cf7eeb0fa41336d24148827\transformed\biometric-1.1.0\AndroidManifest.xml:27:5-74
+60-->[androidx.biometric:biometric:1.1.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\af70b7946cf7eeb0fa41336d24148827\transformed\biometric-1.1.0\AndroidManifest.xml:27:22-71
+61    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+61-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\310518277de1c045777cf755ee855336\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+61-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\310518277de1c045777cf755ee855336\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:22-76
+62
+63    <uses-feature
+63-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\310518277de1c045777cf755ee855336\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+64        android:glEsVersion="0x00020000"
+64-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\310518277de1c045777cf755ee855336\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+65        android:required="true" />
+65-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\310518277de1c045777cf755ee855336\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+66
+67    <permission
+67-->[androidx.core:core:1.13.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\dfc2fbca530748e569b0737b09fa016f\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+68        android:name="com.example.flutter_application_1.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+68-->[androidx.core:core:1.13.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\dfc2fbca530748e569b0737b09fa016f\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+69        android:protectionLevel="signature" />
+69-->[androidx.core:core:1.13.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\dfc2fbca530748e569b0737b09fa016f\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+70
+71    <uses-permission android:name="com.example.flutter_application_1.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+71-->[androidx.core:core:1.13.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\dfc2fbca530748e569b0737b09fa016f\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+71-->[androidx.core:core:1.13.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\dfc2fbca530748e569b0737b09fa016f\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+72    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+72-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:22:5-65
+72-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:22:22-62
+73    <uses-feature
+73-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:25:5-27:36
+74        android:name="android.hardware.camera"
+74-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:26:9-47
+75        android:required="false" />
+75-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:27:9-33
+76    <uses-feature
+76-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:28:5-30:36
+77        android:name="android.hardware.camera.front"
+77-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:29:9-53
+78        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+78-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:30:9-33
+79    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+80    <uses-feature
+80-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:33:5-35:36
+81        android:name="android.hardware.camera.autofocus"
+81-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:34:9-57
+82        android:required="false" />
+82-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:35:9-33
+83    <uses-feature
+83-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:36:5-38:36
+84        android:name="android.hardware.camera.flash"
+84-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:37:9-53
+85        android:required="false" />
+85-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:38:9-33
+86    <uses-feature
+86-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:39:5-41:36
+87        android:name="android.hardware.screen.landscape"
+87-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:40:9-57
+88        android:required="false" />
+88-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:41:9-33
+89    <uses-feature
+89-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:42:5-44:36
+90        android:name="android.hardware.wifi"
+90-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:43:9-45
+91        android:required="false" />
+91-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:44:9-33
+92
+93    <application
+94        android:name="android.app.Application"
+95        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+95-->[androidx.core:core:1.13.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\dfc2fbca530748e569b0737b09fa016f\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+96        android:debuggable="true"
+97        android:extractNativeLibs="true"
+98        android:icon="@mipmap/ic_launcher"
+99        android:label="flutter_application_1" >
+100        <activity
+101            android:name="com.example.flutter_application_1.MainActivity"
+102            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+103            android:exported="true"
+104            android:hardwareAccelerated="true"
+105            android:launchMode="singleTop"
+106            android:taskAffinity=""
+107            android:theme="@style/LaunchTheme"
+108            android:windowSoftInputMode="adjustResize" >
+109
+110            <!--
+111                 Specifies an Android theme to apply to this Activity as soon as
+112                 the Android process has started. This theme is visible to the user
+113                 while the Flutter UI initializes. After that, this theme continues
+114                 to determine the Window background behind the Flutter UI.
+115            -->
+116            <meta-data
+117                android:name="io.flutter.embedding.android.NormalTheme"
+118                android:resource="@style/NormalTheme" />
+119
+120            <intent-filter>
+121                <action android:name="android.intent.action.MAIN" />
+121-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:29:13-65
+121-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:29:21-62
 122
-123        <receiver
-123-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-124            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-124-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-125            android:directBootAware="false"
-125-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-126            android:enabled="true"
-126-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-127            android:exported="true"
-127-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-128            android:permission="android.permission.DUMP" >
-128-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-129            <intent-filter>
-129-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-130                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-130-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-130-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-131            </intent-filter>
-132            <intent-filter>
-132-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-133                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-133-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-133-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-134            </intent-filter>
-135            <intent-filter>
-135-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-136                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-136-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-136-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-137            </intent-filter>
-138            <intent-filter>
-138-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-139                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-139-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-139-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-140            </intent-filter>
-141        </receiver>
-142
-143        <activity
-143-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:47:9-53:63
-144            android:name="com.journeyapps.barcodescanner.CaptureActivity"
-144-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:48:13-74
-145            android:clearTaskOnLaunch="true"
-145-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
-146            android:screenOrientation="sensorLandscape"
-146-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:50:13-56
-147            android:stateNotNeeded="true"
-147-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
-148            android:theme="@style/zxing_CaptureTheme"
-148-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:52:13-54
-149            android:windowSoftInputMode="stateAlwaysHidden" />
-149-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
-150    </application>
-151
-152</manifest>
+123                <category android:name="android.intent.category.LAUNCHER" />
+124            </intent-filter>
+125        </activity>
+126        <!--
+127             Don't delete the meta-data below.
+128             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+129        -->
+130        <meta-data
+131            android:name="flutterEmbedding"
+132            android:value="2" />
+133
+134        <uses-library
+134-->[androidx.window:window:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\aed2861b2b6894f7067df3f3f96b791f\transformed\jetified-window-1.2.0\AndroidManifest.xml:23:9-25:40
+135            android:name="androidx.window.extensions"
+135-->[androidx.window:window:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\aed2861b2b6894f7067df3f3f96b791f\transformed\jetified-window-1.2.0\AndroidManifest.xml:24:13-54
+136            android:required="false" />
+136-->[androidx.window:window:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\aed2861b2b6894f7067df3f3f96b791f\transformed\jetified-window-1.2.0\AndroidManifest.xml:25:13-37
+137        <uses-library
+137-->[androidx.window:window:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\aed2861b2b6894f7067df3f3f96b791f\transformed\jetified-window-1.2.0\AndroidManifest.xml:26:9-28:40
+138            android:name="androidx.window.sidecar"
+138-->[androidx.window:window:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\aed2861b2b6894f7067df3f3f96b791f\transformed\jetified-window-1.2.0\AndroidManifest.xml:27:13-51
+139            android:required="false" />
+139-->[androidx.window:window:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\aed2861b2b6894f7067df3f3f96b791f\transformed\jetified-window-1.2.0\AndroidManifest.xml:28:13-37
+140
+141        <receiver
+141-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:42:9-49:20
+142            android:name="com.razorpay.RzpTokenReceiver"
+142-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:43:13-57
+143            android:exported="true" >
+143-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:44:13-36
+144            <intent-filter>
+144-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:46:13-48:29
+145                <action android:name="rzp.device_token.share" />
+145-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:37:13-61
+145-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:37:21-58
+146            </intent-filter>
+147        </receiver>
+148
+149        <activity
+149-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:51:9-59:20
+150            android:name="com.razorpay.CheckoutActivity"
+150-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:52:13-57
+151            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+151-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:53:13-83
+152            android:exported="false"
+152-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:54:13-37
+153            android:theme="@style/CheckoutTheme" >
+153-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:55:13-49
+154            <intent-filter>
+154-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:56:13-58:29
+155                <action android:name="android.intent.action.MAIN" />
+155-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:29:13-65
+155-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:29:21-62
+156            </intent-filter>
+157        </activity>
+158
+159        <provider
+159-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:61:9-69:20
+160            android:name="androidx.startup.InitializationProvider"
+160-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:62:13-67
+161            android:authorities="com.example.flutter_application_1.androidx-startup"
+161-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:63:13-68
+162            android:exported="false" >
+162-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:64:13-37
+163            <meta-data
+163-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:66:13-68:52
+164                android:name="com.razorpay.RazorpayInitializer"
+164-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:67:17-64
+165                android:value="androidx.startup" />
+165-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:68:17-49
+166            <meta-data
+166-->[androidx.emoji2:emoji2:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\2572c773145932f08e3b72fd0d530e61\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+167                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+167-->[androidx.emoji2:emoji2:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\2572c773145932f08e3b72fd0d530e61\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+168                android:value="androidx.startup" />
+168-->[androidx.emoji2:emoji2:1.2.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\2572c773145932f08e3b72fd0d530e61\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+169            <meta-data
+169-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\bb10008c4b33ee9597583412a41828ed\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+170                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+170-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\bb10008c4b33ee9597583412a41828ed\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+171                android:value="androidx.startup" />
+171-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\bb10008c4b33ee9597583412a41828ed\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+172            <meta-data
+172-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+173                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+173-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+174                android:value="androidx.startup" />
+174-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+175        </provider>
+176
+177        <activity
+177-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:71:9-74:75
+178            android:name="com.razorpay.MagicXActivity"
+178-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:72:13-55
+179            android:exported="false"
+179-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:73:13-37
+180            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+180-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:74:13-72
+181
+182        <meta-data
+182-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:76:9-78:58
+183            android:name="com.razorpay.plugin.googlepay_all"
+183-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:77:13-61
+184            android:value="com.razorpay.RzpGpayMerged" />
+184-->[com.razorpay:standard-core:1.6.47] C:\Users\navee\.gradle\caches\8.10.2\transforms\a452836a2f999e462c7b25f81e940e99\transformed\jetified-standard-core-1.6.47\AndroidManifest.xml:78:13-55
+185
+186        <activity
+186-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\e0c1904752f657b93a7da3682d313879\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:23:9-27:75
+187            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+187-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\e0c1904752f657b93a7da3682d313879\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:24:13-93
+188            android:excludeFromRecents="true"
+188-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\e0c1904752f657b93a7da3682d313879\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:25:13-46
+189            android:exported="false"
+189-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\e0c1904752f657b93a7da3682d313879\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:26:13-37
+190            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+190-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\e0c1904752f657b93a7da3682d313879\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:27:13-72
+191        <!--
+192            Service handling Google Sign-In user revocation. For apps that do not integrate with
+193            Google Sign-In, this service will never be started.
+194        -->
+195        <service
+195-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\e0c1904752f657b93a7da3682d313879\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:33:9-37:51
+196            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+196-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\e0c1904752f657b93a7da3682d313879\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:34:13-89
+197            android:exported="true"
+197-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\e0c1904752f657b93a7da3682d313879\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:35:13-36
+198            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+198-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\e0c1904752f657b93a7da3682d313879\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:36:13-107
+199            android:visibleToInstantApps="true" /> <!-- Needs to be explicitly declared on P+ -->
+199-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\e0c1904752f657b93a7da3682d313879\transformed\jetified-play-services-auth-21.1.0\AndroidManifest.xml:37:13-48
+200        <uses-library
+200-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\310518277de1c045777cf755ee855336\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+201            android:name="org.apache.http.legacy"
+201-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\310518277de1c045777cf755ee855336\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+202            android:required="false" />
+202-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\310518277de1c045777cf755ee855336\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+203
+204        <activity
+204-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\b93785a04fcd49acabbaa600426866db\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+205            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+205-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\b93785a04fcd49acabbaa600426866db\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+206            android:exported="false"
+206-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\b93785a04fcd49acabbaa600426866db\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+207            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+207-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\b93785a04fcd49acabbaa600426866db\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+208
+209        <meta-data
+209-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\48bb13e58e49cdf1e6377472107b28a8\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+210            android:name="com.google.android.gms.version"
+210-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\48bb13e58e49cdf1e6377472107b28a8\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+211            android:value="@integer/google_play_services_version" />
+211-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\48bb13e58e49cdf1e6377472107b28a8\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+212
+213        <receiver
+213-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+214            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+214-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+215            android:directBootAware="false"
+215-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+216            android:enabled="true"
+216-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+217            android:exported="true"
+217-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+218            android:permission="android.permission.DUMP" >
+218-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+219            <intent-filter>
+219-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+220                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+220-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+220-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+221            </intent-filter>
+222            <intent-filter>
+222-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+223                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+223-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+223-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+224            </intent-filter>
+225            <intent-filter>
+225-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+226                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+226-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+226-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+227            </intent-filter>
+228            <intent-filter>
+228-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+229                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+229-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+229-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\navee\.gradle\caches\8.10.2\transforms\5aacd87baa6feaa7bece87b01e7698f0\transformed\jetified-profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+230            </intent-filter>
+231        </receiver>
+232
+233        <activity
+233-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:47:9-53:63
+234            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+234-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:48:13-74
+235            android:clearTaskOnLaunch="true"
+235-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:49:13-45
+236            android:screenOrientation="sensorLandscape"
+236-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:50:13-56
+237            android:stateNotNeeded="true"
+237-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:51:13-42
+238            android:theme="@style/zxing_CaptureTheme"
+238-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:52:13-54
+239            android:windowSoftInputMode="stateAlwaysHidden" />
+239-->[com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\navee\.gradle\caches\8.10.2\transforms\f078a500d692f265659503a50b107aef\transformed\jetified-zxing-android-embedded-4.3.0\AndroidManifest.xml:53:13-60
+240    </application>
+241
+242</manifest>
